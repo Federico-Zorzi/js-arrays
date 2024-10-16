@@ -33,10 +33,10 @@ console.log(isFabioPresent);
 
 //! SECONDA SOLUZIONE
 for (let i = 0; i < teachers.length; i++) {
-  let checkActualTeacher = teachers[i];
+  let actualTeacher = teachers[i];
   let isFabioPresen2 = false;
 
-  if ("Fabio" === checkActualTeacher) {
+  if ("Fabio" === actualTeacher) {
     isFabioPresen2 = true;
     console.log(isFabioPresen2);
   }
@@ -69,9 +69,9 @@ console.log(teachersString);
 let teachersString2 = "";
 
 for (let i = 0; i < teachers.length; i++) {
-  let findActualTeacher = teachers[i];
+  let actualTeacher = teachers[i];
 
-  teachersString2 += `${findActualTeacher}, `;
+  teachersString2 += `${actualTeacher}, `;
 }
 console.log(teachersString2);
 
