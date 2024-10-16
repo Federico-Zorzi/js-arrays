@@ -11,7 +11,8 @@ let reversedTeachers2 = [];
 for (let i = teachers.length - 1; i >= 0; i--) {
   let actualTeacher = teachers[i];
 
-  reversedTeachers2.unshift(actualTeacher);
+  //* inserito push anche se la prima soluzione già mi inverte l'array
+  reversedTeachers2.push(actualTeacher);
 }
 console.log(reversedTeachers2);
 
