@@ -19,7 +19,8 @@ console.log(reversedTeachers2);
 // 2. Crea un nuovo array chiamato 'longNames' che contenga solo gli insegnanti
 // con un nome di lunghezza maggiore o uguale a 5 caratteri
 // ! PRIMA SOLUZIONE
-/* const longNames = null; */
+const longNames = teachers.filter((value) => value.length >= 5);
+console.log(longNames);
 
 // ! SECONDA SOLUZIONE
 let longNames2 = [];
@@ -44,6 +45,7 @@ for (let i = 0; i < teachers.length; i++) {
 
   if (actualTeacher === "Ed") {
     teachers.splice(i, 1);
+    i--;
   }
 }
 console.log(teachers);
